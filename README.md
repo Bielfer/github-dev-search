@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Introdução
 
-## Getting Started
+Esse projeto permite pesquisar algum usuário do github pelo username e traz algumas informações do perfil, assim como os repositórios desse usuário.
 
-First, run the development server:
+Você pode acessar esse projeto live clicando ['aqui'](https://github-dev-search.vercel.app)
+
+## Instalação
+
+Após clonar o repositório para seu computador rode o seguinte comando para instalar as bibliotecas necessárias.
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Em seguida rodar o build basta utilizar o seguinte comando
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+## Bibliotecas Utilizadas
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- next: para um pequeno projeto talvez tenha sido overkill, mas em grandes projetos a SSG traz um benefício para a UX e o next possui um diversas features que podem auxiliar no desenvolvimento, como as api routes.
+- tailwindcss: permite a construção rápida de interfaces que são mais personalizadas que uma biblioteca como o material ui. Também possui uma intellisense excelente junto ao vscode.
+- axios: reduz o boilerplate do código
+- date-fns: biblioteca leve e bem intuitiva para formatação de datas
+- swr: traz mais clareza para o código e permite fazer cache de requests
+- react-icons: possui diversos ícones de diversas style guidelines
